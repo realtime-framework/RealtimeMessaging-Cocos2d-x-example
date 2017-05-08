@@ -36,7 +36,7 @@ Cocos2d-x is an open-source game framework written in C++, with a thin platform 
 		cocosRealtimeMessaging/presence.cpp \
 		cocosRealtimeMessaging/slre/slre.cpp \
 			
-	
+*	add `LOCAL_STATIC_LIBRARIES += cocos_curl_static` to local static libraries entrys in `Android.mk` if using cocos2dx version >= 3.13
 *	In the last line add `$(call import-module,curl/prebuilt/android)`
 *	If building for iOS, make sure in the XCode project the cocos2d_libs is using libcurl.a in link with binary libraries.
 
